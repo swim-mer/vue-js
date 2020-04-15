@@ -32,3 +32,16 @@ var loop = new Vue({
     ]
   }
 })
+var capitalize = new Vue({
+  el: '#capitalize-app',
+  data: {
+    message: 'what?'
+  },
+  methods: {
+    capitalizeMessage: function() {
+      var text = 'I said '
+      this.message = text + this.message.toUpperCase()
+    }
+  }
+})
+
