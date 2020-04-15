@@ -9,12 +9,14 @@
     {{ message }}
   </div>
   <div id="hover-app">
-    <!-- v-bind attribute is a directive -->
+    <!-- v- attributes are directives -->
+    <!-- v-bind is dynamic binding directive -->
     <span v-bind:title="message">
       Hover over this text
     </span>
   </div>
   <div id="disappear-app">
+    <!-- v-if used as a toggle -->
     <span v-if="seen">disappearing text</span>
   </div>
   <script src="apps.js">
