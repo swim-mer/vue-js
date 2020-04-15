@@ -21,3 +21,14 @@ var disappear = new Vue({
     seen: true
   }
 })
+var loop = new Vue({
+  el: '#loop-app',
+  data: {
+    list: [
+      { text: 'one' },
+      { text: 'two' },
+      { text: 'three' }
+      // append more objects with loop.list.push({text: 'text here'})
+    ]
+  }
+})

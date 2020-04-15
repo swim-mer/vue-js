@@ -19,6 +19,14 @@
     <!-- v-if directive used as a toggle dependent on existence of DOM element -->
     <span v-if="seen">disappearing text</span>
   </div>
+  <div id="loop-app">
+    <ol>
+      <!-- v-for directive used to loop through list  -->
+      <li v-for="obj in list">
+        {{ obj.text }}
+      </li>
+    </ol>
+  </div>
   <script src="apps.js">
   </script>
 </body>
