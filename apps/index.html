@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+  <title>My first Vue app</title>
+  <!-- development version, includes helpful console warnings -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+  <div id="vue-app">
+    {{ message }}
+  </div>
+  <div id="hover-app">
+    <span v-bind:title="message">
+      Hover over this text
+    </span>
+  </div>
+  <script src="apps.js">
+  </script>
+</body>
+</html>
