@@ -13,4 +13,11 @@ var hover = new Vue({
     message: 'hovering text'
   }
 })
-
+var disappear = new Vue({
+  el: '#disappear-app',
+  data: {
+    // change value to false to disappear text
+    // can be done in console with disappear.seen = false
+    seen: true
+  }
+})
