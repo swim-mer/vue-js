@@ -46,4 +46,9 @@ var capitalize = new Vue({
     }
   }
 })
-
+var responsive = new Vue({
+  el: '#responsive-app',
+  data: {
+    message: 'change me'
+  }
+})
