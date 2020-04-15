@@ -38,7 +38,9 @@ var capitalize = new Vue({
     message: 'what?'
   },
   methods: {
+    // define method
     capitalizeMessage: function() {
+      this.message = 'what?'
       var text = 'I said '
       this.message = text + this.message.toUpperCase()
     }
