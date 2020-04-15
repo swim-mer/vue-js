@@ -8,11 +8,22 @@
   <div id="vue-app">
     {{ message }}
   </div>
+  <div id="hover-app">
+    <span v-bind:title="message">
+      Hover over this text
+    </span>
+  </div>
   <script>
     var app = new Vue({
       el: '#vue-app',
       data: {
         message: 'displayed text'
+      }
+    })
+    var hover = new Vue({
+      el: '#hover-app',
+      data: {
+        message: 'hovering text'
       }
     })
   </script>
