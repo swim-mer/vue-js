@@ -8,6 +8,9 @@
   <div id="vue-app">
     {{ message }}
   </div>
+  <div>
+    --------------------------------------------------------------------------------
+  </div>
   <div id="hover-app">
     <!-- v- attributes are directives -->
     <!-- v-bind is dynamic binding directive -->
@@ -15,9 +18,15 @@
       Hover over this text
     </span>
   </div>
+  <div>
+    --------------------------------------------------------------------------------
+  </div>
   <div id="disappear-app">
     <!-- v-if directive used as a toggle dependent on existence of DOM element -->
     <span v-if="seen">disappearing text</span>
+  </div>
+  <div>
+    --------------------------------------------------------------------------------
   </div>
   <div id="loop-app">
     <ol>
@@ -26,6 +35,11 @@
         {{ obj.text }}
       </li>
     </ol>
+  </div>
+  <div>
+    --------------------------------------------------------------------------------
+  </div>
+  <div>
   </div>
   <script src="apps.js">
   </script>
