@@ -1,3 +1,9 @@
+// Define new component
+var comp = Vue.component('comp', {
+  template: `<p>Surprise! I\'m a component. I wasn\'t here originally, but now I\'m going to get cozy for a few.</p>` 
+})
+
+
 // Create new app
 var app = new Vue({
   // connects to div id 'vue-app'
@@ -11,6 +17,9 @@ var hover = new Vue({
   el: '#hover-app',
   data: {
     message: 'hovering text'
+  },
+  components: {
+    comp: comp
   }
 })
 var disappear = new Vue({
@@ -52,3 +61,4 @@ var responsive = new Vue({
     message: 'change me'
   }
 })
+
