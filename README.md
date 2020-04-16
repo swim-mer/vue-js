@@ -8,3 +8,5 @@
   - `$ npm install npm@latest -g`
 - Install Vue CLI:
   - `$ npm install -g @vue/cli`
+- Install global addon for `vue serve`:
+  - `$ npm install -g @vue/cli-service-global`
