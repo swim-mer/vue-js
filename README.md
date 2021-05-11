@@ -25,5 +25,6 @@
 - Install global addon for `vue serve`:
   - `$ npm install -g @vlue/cli-service-global`
 
-## To run the Vue server:
-- `$ vue serve`
+## To prototype a single .vue file:
+- `$ vue serve FileName.vue`
+  - Note: must not be in the same directory as `index.html`, or it will be overridden
