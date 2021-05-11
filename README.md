@@ -12,3 +12,18 @@
   - `$ npm install -g @vue/cli-service-global`
 - Install yarn
   - `$ brew install yarn`
+
+## To run on Ubuntu:
+- Install Node.js:
+  - `$ sudo apt install nodejs`
+- Install npm:
+  - `$ sudo apt install npm`
+- Check for successful installs:
+  - `$ node -v; npm -v`
+- Install Vue CLI:
+  - $ npm install -g @vue/cli
+- Install global addon for `vue serve`:
+  - `$ npm install -g @vlue/cli-service-global`
+
+## To run the Vue server:
+- `$ vue serve`
