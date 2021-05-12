@@ -20,8 +20,10 @@
   - `$ sudo apt install npm`
 - Check for successful installs:
   - `$ node -v; npm -v`
+- Update node:
+  - `$ npm cache clean -f; npm install -g n; n latest`
 - Install Vue CLI:
-  - $ npm install -g @vue/cli
+  - `$ npm install -g @vue/cli`
 - Install global addon for `vue serve`:
   - `$ npm install -g @vlue/cli-service-global`
 
