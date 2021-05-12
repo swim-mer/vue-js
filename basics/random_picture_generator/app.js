@@ -15,7 +15,21 @@ const app = Vue.createApp({
         axios.get(imageData).then(response => {
             this.info = response.data
         })
-    }
+    },
+    methods: {
+        async getPic() {
+            const num = (Math.floor(Math.random() * (max - min + 1)) + min).toString();
+            const imageData = 'https://picsum.photos/id/' + num + '/info';
+
+            this.picture = 'https://picsum.photos/id/' + num + '/800/600'
+            axios.get(imageData).then(response => {
+                this.info = response.data
+            })
+        },
+        getNum() {
+            this.num = (Math.floor(Math.random() * (max - min + 1)) + min).toString();
+        }
+    },
 })
 
 app.mount('#app')

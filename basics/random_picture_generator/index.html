@@ -5,16 +5,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE edge">
         <meta name=viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <script src="math.js" type="text/javascript"></script>
         <title>Random Picture Generator</title>
     </head>
     <body>
         <div id="app">
-            <img :class="`${info.id}`" v-bind:src="picture" :alt="info.url" /><br />
+            <img v-bind:src="picture" /><br />
             <p>Author:
                 <span v-text="info.author"></span><br />
             </p>
-            <button :class="id-`${info.id}`">Generate Random Picture</button>
+            <button v-on:click="getPic()">Generate Random Picture</button>
         </div>
 
         <script src="https://unpkg.com/vue@3.0.5"></script>
