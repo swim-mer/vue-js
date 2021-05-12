@@ -1,0 +1,9 @@
+@for $i from 1 through 500 {
+    .#{$i} {
+        @if $i < 100 { background-color: black; color: pink; }
+        @else if $i < 200 { background-color: red; color: pink; } 
+        @else if $i < 300 { background-color: yellow; color: green;}
+        @else if $i < 400 { background-color: pink; color: black;}
+        @else {background-color: green; color: yellow;}  
+    }
+}
