@@ -1,13 +1,13 @@
 <template>
     <div class="container">
-        <h1>My pet is a {{ animal_type }} named {{ msg }}</h1>
+        <h1>My pet is a {{ animal_type }} named {{ animal_name }}.</h1>
     </div>
 </template>
 
 <script>
 export default {
     props: {
-        msg: {
+        animal_name: {
             type: String,
             default: ''
         },

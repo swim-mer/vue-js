@@ -1,5 +1,5 @@
 <template>
-  <Cat msg="Annie"></Cat>
+  <Cat breed="American Shorthair"></Cat>
 </template>
 
 <script>
