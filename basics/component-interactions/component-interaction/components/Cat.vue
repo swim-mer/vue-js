@@ -15,6 +15,11 @@ export default {
           type: String,
           default: ''
       }
+  },
+  data() {
+      return {
+          animal_name: 'Annie'
+      }
   }
 }
 </script>
