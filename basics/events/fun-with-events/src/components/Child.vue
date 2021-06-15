@@ -6,7 +6,7 @@
         >
         <p>Click this button:
             <button @click="$emit('status', true)">
-                Click Me To See Child Component
+                Click Me To See Parent and Child Images
             </button>
             <button @click="$emit('status', false)">
                 Reset

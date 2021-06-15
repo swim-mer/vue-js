@@ -1,6 +1,7 @@
 <template>
     <div>
-        <img alt="Mountainous forests of Adjara, Georgia" 
+        <img v-if="showImage"
+             alt="Mountainous forests of Adjara, Georgia" 
              src="../assets/marita-kavelashvili-ugnrXk1129g-unsplash.jpg"
         >
         <Child @status="showImage=$event" :showImage="showImage">
@@ -15,19 +16,7 @@ export default {
   components: { Child },
   data: () => ({
     showImage: false
-  }),
-  props: {
-    msg: {
-        type: String,
-        default: ''
-    }
-  },
-  methods: {
-      display(event) {
-          console.log(event)
-          this.displayImage = event
-      }
-  }
+  })
 }
 </script>
 

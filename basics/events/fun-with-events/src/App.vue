@@ -1,6 +1,5 @@
 <template>
   <Parent />
-  <Child />
 </template>
 
 <script>
